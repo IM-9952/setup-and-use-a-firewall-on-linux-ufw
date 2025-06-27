@@ -203,3 +203,44 @@ To                         Action      From
         nc 127.0.0.1 23
     (UNKNOWN) [127.0.0.1] 23 (telnet) : Connection refused
 
+
+## Step -5 Add rule to allow SSH (Port 22) and TCP
+
+    sudo ufw allow 22/tcp
+    sudo ufw status   
+    
+    ```
+Status: active
+
+To                         Action      From
+--                         ------      ----
+23                         DENY        Anywhere                  
+22                         ALLOW       Anywhere                  
+22/tcp                     ALLOW       Anywhere                  
+23 (v6)                    DENY        Anywhere (v6)             
+22 (v6)                    ALLOW       Anywhere (v6)             
+22/tcp (v6)                ALLOW       Anywhere (v6) 
+    ```
+
+## Step -6 Remove the test block rule to restore original state
+
+    
+    
+    sudo ufw reset 
+
+```
+Resetting all rules to installed defaults. Proceed with operation (y|n)? y
+Backing up 'user.rules' to '/etc/ufw/user.rules.20250627_161613'
+Backing up 'before.rules' to '/etc/ufw/before.rules.20250627_161613'
+Backing up 'after.rules' to '/etc/ufw/after.rules.20250627_161613'
+Backing up 'user6.rules' to '/etc/ufw/user6.rules.20250627_161613'
+Backing up 'before6.rules' to '/etc/ufw/before6.rules.20250627_161613'
+Backing up 'after6.rules' to '/etc/ufw/after6.rules.20250627_161613'
+
+```
+
+
+
+
+   
+
