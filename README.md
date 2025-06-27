@@ -184,9 +184,9 @@ Chain ufw-user-output (1 references)
 
 ## Step -3 Add a rule to block inbound traffic
 
-  sudo ufw deny in 23
+      sudo ufw deny in 23
   
-  sudo ufw status
+      sudo ufw status
       
 ```Status: active
 
