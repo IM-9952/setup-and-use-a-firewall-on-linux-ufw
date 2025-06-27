@@ -1,4 +1,4 @@
-# setup-and-use-a-firewall-on-linux-ufw
+# Setup-and-use-a-firewall-on-linux-ufw
 Task4- setup and use a firewall (UFW) on kali 
 ## Step 1- Installation UFW in kali 
 
