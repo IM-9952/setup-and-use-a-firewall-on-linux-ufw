@@ -177,8 +177,8 @@ Chain ufw-user-logging-output (0 references)
  pkts bytes target     prot opt in     out     source               destination         
 
 Chain ufw-user-output (1 references)
- pkts bytes target     prot opt in     out     source               destination         
-             ```
+ pkts bytes target     prot opt in     out     source               destination
+ ```
 
 
 
