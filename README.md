@@ -197,3 +197,9 @@ To                         Action      From
 
 ```
 
+
+## step -4 Test the rule
+
+        nc 127.0.0.1 23
+    (UNKNOWN) [127.0.0.1] 23 (telnet) : Connection refused
+
