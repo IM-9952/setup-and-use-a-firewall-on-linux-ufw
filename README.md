@@ -5,7 +5,7 @@ Task4- setup and use a firewall (UFW) on kali
 ```
 sudo apt-get update && sudo apt-get install ufw
 sudo apt install ufw
-
+```
 ## Step 2 - List of current firewalls rules
     sudo iptables -L -v -n
 ```
