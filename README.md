@@ -179,4 +179,21 @@ Chain ufw-user-logging-output (0 references)
 Chain ufw-user-output (1 references)
  pkts bytes target     prot opt in     out     source               destination         
              ```
-             
+
+
+## Step -3 Add a rule to block inbound traffic
+
+```
+# sudo ufw deny in 23
+
+
+# sudo ufw status       
+Status: active
+
+To                         Action      From
+--                         ------      ----
+23                         DENY        Anywhere                  
+23 (v6)                    DENY        Anywhere (v6)    
+
+```
+
